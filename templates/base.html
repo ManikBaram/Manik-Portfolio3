@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+ <style>
+    html {
+      scroll-behavior: smooth; /* smooth scroll */
+    }
+    section {
+      scroll-margin-top: 80px; /* fixed navbar height অনুযায়ী adjust */
+      min-height: 100vh; /* প্রতিটা সেকশন ফুল ভিউ দেখানোর জন্য */
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+    }
+  </style>
+<body>
+
+    {% include 'navber.html' %}
+
+   <section id="home"> <div class="pt-24">
+   {% include 'home.html' %}
+    </div></section>
+   <section id="about"> {% include 'about.html' %}</section>
+    <section id="skill">{% include 'Skill.html' %}</section>
+   <section id="project"> {% include 'project.html' %}</section>
+    
+    <section id="contact">  {% include 'contact.html' %} </section>
+    {% include 'footer.html' %}
+
+</body>
+</html>

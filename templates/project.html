@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 1536px;
+      margin: auto;
+      padding: 0 1rem;
+    }
+
+    h1 {
+      font-size: 1.875rem;
+      font-weight: bold;
+      margin-bottom: 1.25rem;
+    }
+
+    .underline {
+      text-decoration: underline;
+      font-weight: 600;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1rem;
+      margin-top: 1.25rem;
+      margin-bottom: 1.25rem;
+    }
+
+    @media (min-width: 768px) {
+      .grid {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+
+    .card1 {
+      width: 100%;
+      max-width: 300px;
+      height: 300px;
+      border: 2px solid #ccc;
+      border-radius: 0.5rem;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      padding: 0.25rem;
+      transition: transform 0.3s ease;
+      text-align: center;
+      margin: auto;
+    }
+
+    .card1:hover {
+      transform: scale(1.1);
+    }
+
+    .card1 img {
+      width: 100%;
+      height: auto;
+      padding: 0.25rem;
+      border: 2px solid #ccc;
+     object-fit:contain;
+     border-radius:0;
+      object-fit: cover;
+      clip-path:none;
+    }
+
+    .card1 .title {
+      font-weight: bold;
+      font-size: 1.25rem;
+      margin: 0.5rem 0;
+    }
+
+    .card1 p {
+      font-size: 0.875rem;
+      color: #4a4a4a;
+      padding: 0 0.5rem;
+    }
+
+    .buttons {
+      margin-top: 0.75rem;
+    }
+
+    .buttons button {
+      font-weight: bold;
+      padding: 0.5rem 1rem;
+      border: none;
+      border-radius: 0.375rem;
+      color: white;
+      cursor: pointer;
+      margin: 0 0.25rem;
+    }
+
+    .buttons .video-btn {
+      background-color: #3b82f6;
+    }
+
+    .buttons .video-btn:hover {
+      background-color: #1d4ed8;
+    }
+
+    .buttons .code-btn {
+      background-color: #22c55e;
+    }
+
+    .buttons .code-btn:hover {
+      background-color: #15803d;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container" style="margin-top: 2.5rem;">
+  <h1>Project</h1>
+  
+  <div class="grid">
+    
+    <!-- Card Example -->
+    <div class="card1">
+      <img src="static\img\portfolio.png" alt="MongoDB">
+      <div class="title">Portfolio</div>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+      <div class="buttons">
+        <button class="video-btn">Live</button>
+        <button class="code-btn">Source Code</button>
+      </div>
+    </div>
+
+    
+
+   
+
+    
+
+    
+
+    
+
+  </div>
+</div>
+
+</body>
+</html>

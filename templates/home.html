@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Home Section</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      padding-top: 64px; /* Space for fixed navbar */
+    }
+
+    .container {
+      max-width: 1536px;
+      margin: auto;
+      padding: 0 1rem;
+    }
+
+    .home {
+      margin-top:80px;
+      
+      
+      
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    .home-content {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 1rem;
+    }
+
+    .welcome {
+      font-size: 1.25rem;
+    }
+
+    .title {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 1.5rem;
+    }
+
+    .typed-text {
+      color: darkred;
+      font-weight: bold;
+    }
+
+    .description {
+      font-size: 0.9rem;
+      text-align: justify;
+    }
+
+    /* Social / Tech Section */
+    .flex-row {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+    @media (max-width: 767px) {
+       .home {
+    flex-direction: column;
+  }
+
+  .home-image {
+    order: 1;  /* Image উপরে */
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+  }
+
+  .home-content {
+    order: 2;  /* Text নিচে */
+    text-align: left;
+  }
+  .flex-row {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+  }
+
+  .tech-icons-wrap {
+    width: 100%;
+  }
+
+  .tech-icons {
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 0.5rem;
+  }
+
+  .tech-icons i {
+    font-size: 1.5rem;  /* mobile এ icons একটু ছোট */
+    padding: 0.25rem;
+  }
+}
+
+
+    @media (min-width: 768px) {
+      .home {
+        flex-direction: row;
+      }
+       .home-content {
+    order: 1;
+    width: 50%;
+    text-align: left;
+  }
+
+  .home-image {
+    order: 2;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+  }
+      .flex-row {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items:center;
+        text-align:center;
+      }
+      .tech-icons{
+        justify-content:center;
+      }
+    }
+
+   .social-icons-row {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.social-icons-row i {
+  font-size: 1.8rem;
+  border: 2px solid black;
+  padding: 0.3rem;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.social-icons-row i:hover {
+  transform: scale(1.1);
+}
+
+    .social-icons a {
+      font-size: 1.5rem;
+      color: black;
+      text-decoration: none;
+      transition: transform 0.2s;
+    }
+
+    .social-icons a:hover {
+      transform: scale(1.1);
+    }
+
+    .tech-icons {
+      display: flex;
+      gap: 1rem;
+    }
+
+    .tech-icons i {
+      font-size: 1.8rem;
+      border: 2px solid black;
+      padding: 0.3rem;
+      border-radius: 50%;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+
+    .tech-icons i:hover {
+      transform: scale(1.1);
+    }
+
+    /* Image */
+    .home-image img {
+      border-radius: 50%;
+      width: 300px;
+      height: 300px;
+      object-fit: cover;
+    }
+
+    @media (min-width: 1024px) {
+      .home-image img {
+        width: 450px;
+        height: 450px;
+      }
+    }
+
+    hr {
+      margin: 3rem 0;
+    }
+  </style>
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+</head>
+<body>
+
+<div class="container home">
+  <!-- Left Content -->
+  <div class="home-content">
+    <span class="welcome">Welcome In My Feed</span>
+
+    <div class="title">
+      <h1>Hello, I'm a</h1>
+      <span class="typed-text"></span>
+    </div>
+
+    <p class="description">
+      Hello, I'm Manik, a passionate web developer who loves building modern and user-friendly websites. 
+  I enjoy learning new technologies and creating software that makes life easier. 
+  With a focus on clean design and strong problem-solving, I aim to deliver simple and effective solutions.
+    </p>
+
+    <div class="flex-row">
+      <!-- Social -->
+      <div class="tech-icons-wrap">
+        <h3 style="text-align:center;">Available on</h3>
+        <div class='tech-icons'>
+          <a href="https://www.facebook.com/share/1FABozbsJ9/" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+          <a href="https://www.linkedin.com/in/manik-baram-615ab1347" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="www.youtube.com/@manikbaram7462" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+          <a href="https://t.me/barammanik" target="_blank"><i class="fa-brands fa-telegram"></i></a>
+        </div>
+      </div>
+
+      <!-- Tech -->
+      <div class="tech-icons-wrap">
+        <h3 style="text-align:center;">Currently working on</h3>
+        <div class="tech-icons">
+          <i class="fa-solid fa-database"></i>
+          <i class="fa-solid fa-code"></i>
+          <i class="fa-brands fa-react"></i>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Right Image -->
+  <div class="home-image">
+    <img src="static\img\change_img.jpg"alt="Profile" />
+  </div>
+</div>
+
+<hr/>
+
+<!-- Typing effect JS -->
+<script>
+  const typedTextSpan = document.querySelector(".typed-text");
+  const textArray = ["Developer", "Programmer", "Coder"];
+  const typingDelay = 100;
+  const erasingDelay = 50;
+  const newTextDelay = 1500; // pause after word
+  let textArrayIndex = 0;
+  let charIndex = 0;
+
+  function type() {
+    if (charIndex < textArray[textArrayIndex].length) {
+      typedTextSpan.textContent += textArray[textArrayIndex].charAt(charIndex);
+      charIndex++;
+      setTimeout(type, typingDelay);
+    } else {
+      setTimeout(erase, newTextDelay);
+    }
+  }
+
+  function erase() {
+    if (charIndex > 0) {
+      typedTextSpan.textContent = textArray[textArrayIndex].substring(0, charIndex - 1);
+      charIndex--;
+      setTimeout(erase, erasingDelay);
+    } else {
+      textArrayIndex++;
+      if (textArrayIndex >= textArray.length) textArrayIndex = 0;
+      setTimeout(type, typingDelay + 500);
+    }
+  }
+
+  document.addEventListener("DOMContentLoaded", () => {
+    if (textArray.length) setTimeout(type, newTextDelay + 250);
+  });
+</script>
+
+</body>
+</html>
+
