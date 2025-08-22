@@ -45,5 +45,5 @@ def send_message():
 
 
 if __name__ == "__main__":
-    port = int(os.environ.get("PORT", 5000))  # Railway এর PORT ব্যবহার করবে
+    port = int(os.environ.get("PORT", 8080))  # Railway এর PORT ব্যবহার করবে
     app.run(host="0.0.0.0", port=port)
